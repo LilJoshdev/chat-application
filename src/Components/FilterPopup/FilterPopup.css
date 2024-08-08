@@ -1,0 +1,47 @@
+.filter__container {
+    background-color: white;
+    box-shadow: 0 0 5px grey;
+    padding: 1rem;
+    border-radius: .8rem;
+    position: absolute;
+    top: 9%;
+    /* right: 10%; */
+    z-index: 9999;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    animation: .3s slideDown ease-out;
+    
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-6rem);
+    }
+    to {
+        transform: translateY(6rem);
+    }
+}
+
+.filter__header {
+    color: grey;
+    font-weight: 500;
+    padding-bottom: .4rem;
+    font-size: 1rem;
+}
+
+.filter__option {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    gap: 1.5rem;
+    padding-bottom: .6rem;
+}
+
+.filter__option p {
+    font-size: .8rem;
+}
+
+.filterpopup__icons {
+    font-size: 1.2rem;
+}

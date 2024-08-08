@@ -1,0 +1,163 @@
+.app {
+  background-color: rgb(252, 252, 253);
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.header {
+  /* background-color: rgb(54, 107, 54); */
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  gap: .4rem;
+  margin: 0rem .6rem;
+  /* padding: .8rem 0; */
+}
+.header p {
+  font-weight: 500;
+  font-size: .8rem;
+}
+
+.logo {
+  width: 1.1rem;
+  object-fit: contain;
+}
+
+.app__container {
+  /* box-shadow: 0 0 .2rem grey; */
+  border: 1.2px solid lightgray;
+  border-radius: .3rem;
+  height: 98vh;
+  width: 95%;
+  margin-top: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-left: 1.7rem;
+  background-color: white;
+  /* padding-right: 1.3rem; */
+}
+
+.app__body {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  /* flex-direction: column; */
+}
+
+.app__mainIconLists {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* background-color: red; */
+  height: 90vh;
+  z-index: 999;
+}
+
+.app__icons {
+  font-size: 1.2rem;
+  margin: .6rem;
+  color: rgb(83, 83, 83);
+  cursor: pointer;
+  /* padding-left: 1rem; */
+  /* position: relative; */
+
+}
+
+.app__icon-wrapper {
+  display: flex;
+  align-items: center;
+  animation: .2s slide ease;
+  /* background-color: red; */
+}
+
+
+.icon__text {
+  position: absolute;
+  /* top: 2%; */
+  z-index: 999;
+  background-color: white;
+  box-shadow: 0 0 3px grey;
+  padding: .5rem;
+  left: 3%;
+  /* display: none; */
+}
+
+.show__icons-bg {
+  background-color: white;
+  /* width: 300%; */
+  z-index: 999 !important;
+  /* position: relative; */
+  /* z-index: 999; */
+  /* width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; */
+}
+
+@media(min-width: 768px) {
+
+  .app__icons:hover +.icon__text {
+    display: flex;
+    align-items: center;
+    animation: .2s slide ease;
+  }
+}
+
+
+@keyframes slide {
+  from {
+    transform: translateX(-20%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+
+.app__icons:hover {
+  background-color: rgb(231, 235, 238);
+  /* padding: .3rem; */
+}
+
+.meta__AI {
+  color: purple;
+  border: 3px ridge rgba(86, 71, 177,.7);
+  border-radius: 5rem;
+  /* animation: 2s rotate linear infinite; */
+}
+
+/* @keyframes rotate {
+  form {
+    transform: rotate(0);
+
+  }
+  to{
+    transform: rotate(360deg);
+  
+  }
+} */
+
+.app__upperIcons {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* padding: 1rem; */
+  position: relative;
+}
+.app__downIcons {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.avatar__img_profile {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+

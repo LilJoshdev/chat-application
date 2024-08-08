@@ -1,0 +1,80 @@
+.sidebar__leftchats {
+    height: 100vh;
+    padding: .6rem;
+}
+
+::-webkit-scrollbar {
+    width: 2px;
+}
+
+/* ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+} */
+
+::-webkit-scrollbar-thumb {
+    background-color: green;
+    border-radius: 10px;
+}
+
+.sidebar__leftchat {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: .3rem .3rem;
+    transition: all .2s;
+    
+}
+
+.leftchat__display {
+    padding: .5rem .2rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.leftchat__display:not(:last-child) {
+    border-bottom: .5px solid rgb(240, 240, 240);
+}
+
+
+.leftchat__display:hover {
+    background-color: aliceblue;
+    cursor: pointer;
+}
+
+.sidebar__leftchat-info {
+    font-size: .9rem;
+    
+}
+
+.sidebar__leftchat-info p:first-child {
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.sidebar__leftchat-icon {
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: gray;
+}
+
+.sidebar__message-part {
+    /* color: green; */
+    font-size: x-small;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 200px;
+    white-space: nowrap;
+}
+
+.avatar__img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 100%;
+    color: grey;
+}
+
+
+
+

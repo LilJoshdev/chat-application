@@ -1,0 +1,81 @@
+.sidebar {
+    flex: .35;
+}
+
+@media screen and (max-width: 800px) {
+    .sidebar {
+        /* flex: 1; */
+    }
+
+}
+
+.sidebar__header {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    align-items: center;
+    border-right: 1px solid lightgrey;
+    padding: .8rem .6rem;
+}
+
+.sidebar__header-right>:not(:last-child) {
+    margin-right: .7rem;
+}
+
+.sidebar__icons {
+    font-size: 1.2rem;
+    margin: .3rem;
+    cursor: pointer;
+}
+
+.sidebar__input {
+    display: flex;
+    /* flex: 1; */
+    align-items: center;
+    background-color: white;
+    border: 1px solid lightgrey;
+    margin: .6rem;
+    border-radius: .7rem;
+    border-bottom: 3px solid green;
+}
+
+.sidebar__input input {
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+    background: none;
+    padding: .4rem .2rem;
+    width: 100%;
+    outline: none;
+}
+
+
+
+/* .sidebar__input input:focus {
+    border-bottom-color: 3px solid green;
+} */
+
+.searchBar__searchIcon {
+    margin: .3rem;
+    color: grey;
+    font-size: 1rem;
+}
+
+.sidebar__leftChats {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    height: 80vh;
+    padding-bottom: 1rem;
+    
+}
+
+.filters {
+    position: relative;
+    
+}
+
+.user_search_result {
+    border-bottom: 3px solid green !important;
+}

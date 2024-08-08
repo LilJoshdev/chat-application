@@ -1,0 +1,21 @@
+.verification__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+    h3 {
+        text-align: center;
+    }
+}
+
+.otp {
+    margin: 1rem 0;
+}
+
+.phone__input {
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+}
